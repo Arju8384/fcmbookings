@@ -88,6 +88,7 @@ const Gallery = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
+          id="gallery-header"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}

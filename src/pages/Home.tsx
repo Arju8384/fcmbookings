@@ -344,7 +344,7 @@ const Home = () => {
               className="text-center"
             >
               <motion.a
-                href="/gallery"
+                href="/gallery#gallery-header"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="inline-flex items-center space-x-2 bg-maroon-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-maroon-700 transition-colors duration-300 shadow-lg hover:shadow-xl"
