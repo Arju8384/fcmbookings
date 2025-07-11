@@ -258,6 +258,106 @@ const Home = () => {
 
       {/* Testimonials Section */}
       <section className="py-20 bg-gray-900 relative">
+        {/* Gallery Section */}
+        <section className="py-20 bg-white relative">
+          <div className="container mx-auto px-4">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-center mb-16"
+            >
+              <h2 className="text-3xl sm:text-4xl font-bold text-maroon-900 mb-4">
+                Our <span className="gradient-text">Premium Facilities</span>
+              </h2>
+              <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
+                Take a look at our world-class football turfs and facilities across Chennai
+              </p>
+            </motion.div>
+
+            {/* Gallery Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+              {[
+                {
+                  src: "https://images.pexels.com/photos/399187/pexels-photo-399187.jpeg?auto=compress&cs=tinysrgb&w=600",
+                  title: "Premium Artificial Turf",
+                  description: "FIFA standard artificial grass"
+                },
+                {
+                  src: "https://images.pexels.com/photos/1171084/pexels-photo-1171084.jpeg?auto=compress&cs=tinysrgb&w=600",
+                  title: "Floodlit Evening Games",
+                  description: "Play under professional lighting"
+                },
+                {
+                  src: "https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&w=600",
+                  title: "Tournament Ready",
+                  description: "Host your competitions here"
+                },
+                {
+                  src: "https://images.pexels.com/photos/114296/pexels-photo-114296.jpeg?auto=compress&cs=tinysrgb&w=600",
+                  title: "Natural Grass Fields",
+                  description: "Traditional football experience"
+                },
+                {
+                  src: "https://images.pexels.com/photos/1657349/pexels-photo-1657349.jpeg?auto=compress&cs=tinysrgb&w=600",
+                  title: "Modern Amenities",
+                  description: "Changing rooms & facilities"
+                },
+                {
+                  src: "https://images.pexels.com/photos/274422/pexels-photo-274422.jpeg?auto=compress&cs=tinysrgb&w=600",
+                  title: "Group Training",
+                  description: "Perfect for team practice"
+                }
+              ].map((image, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  whileHover={{ y: -10, scale: 1.02 }}
+                  className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
+                >
+                  <div className="aspect-[4/3] overflow-hidden">
+                    <img
+                      src={image.src}
+                      alt={image.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-6 group-hover:translate-y-0 transition-transform duration-300">
+                    <h3 className="text-lg font-bold mb-2">{image.title}</h3>
+                    <p className="text-sm text-gray-200">{image.description}</p>
+                  </div>
+                  <div className="absolute top-4 right-4 bg-maroon-600 text-white px-3 py-1 rounded-full text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    View
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+
+            {/* Gallery CTA */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-center"
+            >
+              <motion.a
+                href="/gallery"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="inline-flex items-center space-x-2 bg-maroon-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-maroon-700 transition-colors duration-300 shadow-lg hover:shadow-xl"
+              >
+                <span>View Full Gallery</span>
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </motion.a>
+            </motion.div>
+          </div>
+        </section>
+
         {/* 3D Background for Testimonials */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="floating-shapes">
