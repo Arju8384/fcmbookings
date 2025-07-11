@@ -148,7 +148,19 @@ html {
   bottom: 20px;
   right: 20px;
   z-index: 1000;
-  animation: pulse 2s infinite;
+  animation: whatsapp-bounce 3s ease-in-out infinite;
+}
+
+@keyframes whatsapp-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
 }
 
 @keyframes pulse {
