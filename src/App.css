@@ -8,22 +8,22 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  cursor: url('/football-cursor.svg'), auto;
+  cursor: url('/football-cursor.svg') 16 16, auto;
   overflow-x: hidden;
 }
 
 .football-cursor {
-  cursor: url('/football-cursor.svg'), auto;
+  cursor: url('/football-cursor.svg') 16 16, auto;
 }
 
 /* Enhanced cursor for interactive elements */
 button, a, .cursor-pointer {
-  cursor: url('/football-cursor.svg'), pointer;
+  cursor: url('/football-cursor.svg') 16 16, pointer;
 }
 
 /* Hover effect for interactive elements */
 button:hover, a:hover, .cursor-pointer:hover {
-  cursor: url('/football-cursor.svg'), pointer;
+  cursor: url('/football-cursor.svg') 16 16, pointer;
 }
 
 .background-3d {
@@ -197,11 +197,11 @@ html {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   body {
-    cursor: url('/football-cursor.svg'), auto;
+    cursor: url('/football-cursor.svg') 16 16, auto;
   }
   
   button, a, .cursor-pointer {
-    cursor: url('/football-cursor.svg'), pointer;
+    cursor: url('/football-cursor.svg') 16 16, pointer;
   }
   
   .hero-bg {
@@ -230,11 +230,11 @@ html {
 @media (max-width: 640px) {
   /* Ensure cursor works on small screens */
   * {
-    cursor: url('/football-cursor.svg'), auto;
+    cursor: url('/football-cursor.svg') 16 16, auto;
   }
   
   button, a, .cursor-pointer {
-    cursor: url('/football-cursor.svg'), pointer !important;
+    cursor: url('/football-cursor.svg') 16 16, pointer !important;
   }
   
   .hero-content h1 {
@@ -269,13 +269,13 @@ html {
 
 /* Specific cursor for different element types */
 input, textarea, select {
-  cursor: url('/football-cursor.svg'), text;
+  cursor: url('/football-cursor.svg') 16 16, text;
 }
 
 .cursor-grab {
-  cursor: url('/football-cursor.svg'), grab;
+  cursor: url('/football-cursor.svg') 16 16, grab;
 }
 
 .cursor-grabbing {
-  cursor: url('/football-cursor.svg'), grabbing;
+  cursor: url('/football-cursor.svg') 16 16, grabbing;
 }
